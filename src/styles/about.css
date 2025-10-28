@@ -1,0 +1,104 @@
+/* spacing + readable width */
+.section {
+  padding: 64px 0;
+}
+.section .container {
+  max-width: 950px; /* comfortable line length for copy */
+}
+
+/* subsequent section headings */
+.section-title {
+  font-weight: 800;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 16px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: var(--gradient);
+}
+
+/* timeline-ish items */
+.edu-item,
+.job-item {
+  padding: 18px 0;
+  border-left: 3px solid #ede9fe;
+  padding-left: 16px;
+}
+.edu-item + .edu-item,
+.job-item + .job-item {
+  border-top: 1px solid #eef2f7;
+}
+
+/* item headings */
+.edu-item h3,
+.job-item h3 {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.edu-item p strong,
+.job-item p strong {
+  color: #64748b;
+}
+
+/* skills grid */
+.skills-list {
+  display: grid;
+  gap: 10px 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 18px;
+}
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: var(--bg-light);
+  font-weight:600 ;
+}
+.skills-list li:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+    transform: translateY(-2px);
+}
+.skills-list img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* soft skills */
+.soft-skills-list {
+  list-style: disc;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+/* hobbies */
+.hobbies {
+ font-weight: 600;
+ padding-left: 10px;
+}
+
+/* gradient primary button */
+.btn-primary {
+  background: var(--gradient);
+  border: none;
+}
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* ensure sections don't hide under sticky nav when anchored */
+section {
+  scroll-margin-top: 84px;
+}

@@ -1,0 +1,93 @@
+/* 
+   The main hero section background and padding.
+   You can optionally set a gradient or image background later.
+*/
+.hero-section {
+  min-height: 100vh;
+  background: radial-gradient(
+      circle at 70% 30%,
+      rgba(147, 51, 234, 0.15),
+      rgba(59, 130, 246, 0.08)
+    ),
+    linear-gradient(180deg, #f5f3ff 0%, #e9e7ff 100%);
+  overflow: hidden;
+  padding: 100px 20px;
+}
+
+/* Small "Welcome" badge at the top */
+.intro-badge {
+  display: inline-block;
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px; /* Fully rounded pill shape */
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Main title (hero heading) */
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem); /* Responsive font scaling */
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* Gradient text styling for “Creative Developer” */
+.gradient-text {
+  background: var(--gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Subtitle paragraph */
+
+.hero-subtext {
+  max-width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* Primary button (gradient background) */
+.hero-buttons .btn-primary {
+  background: var(--gradient);
+  border: none;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+}
+
+/* Outline button (contact link) */
+.hero-buttons .btn-outline-primary {
+  color: #3b82f6;
+  border: 2px solid var(--primary-color);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 10px;
+  background: var(--bg-light);
+}
+
+/* Outline button hover effect */
+.hero-buttons .btn-outline-primary:hover {
+  background: #f4f3f3;
+  color: black;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Slightly smaller title */
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  /* Slightly smaller paragraph text */
+  .hero-subtext {
+    font-size: 1rem;
+  }
+
+  /* Add spacing between buttons on mobile */
+  .hero-buttons .btn-primary {
+    margin-bottom: 10px;
+  }
+}

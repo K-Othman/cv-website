@@ -1,0 +1,93 @@
+/* Overall background and layout */
+.footer-section {
+  background: linear-gradient(135deg, #312e81 0%, #4c1d95 100%);
+  color: #d1d5db;
+  padding: 60px 0 30px;
+  font-size: 1rem;
+}
+
+/* Column titles */
+.footer-title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+/* Text paragraphs */
+.footer-text {
+  color: #cbd5e1;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Quick Links styling */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Email input form */
+.footer-input {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 12px;
+}
+
+.footer-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.3);
+}
+
+/* Send button */
+.footer-btn {
+  background: var(--gradient);
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.15);
+  margin: 40px 0 20px;
+}
+
+/* Copyright text */
+.footer-bottom {
+  color: #a5b4fc;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
+  .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .footer-btn {
+    width: 100%;
+  }
+}
